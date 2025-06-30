@@ -7,7 +7,7 @@ export const routes: Routes = [
         loadComponent:() => import("./pages/index/index.component").then(c => c.IndexComponent)
     },
     {
-        path:"todos",
-        loadComponent:() => import("./pages/todos/todos.component").then(c => c.TodosComponent)
+        path:"input",
+        loadComponent:() => import("./pages/input/input.component").then(c => c.InputComponent)
     }
 ];

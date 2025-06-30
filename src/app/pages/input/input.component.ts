@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 
 @Component({
   selector: 'app-input',
@@ -8,5 +8,8 @@ import { Component } from '@angular/core';
   styles: ``
 })
 export class InputComponent {
-
+  form = signal({
+    username:"",
+    password:"",
+  })
 }
