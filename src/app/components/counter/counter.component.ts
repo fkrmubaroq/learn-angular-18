@@ -10,11 +10,12 @@ import { Component, signal } from '@angular/core';
 export class CounterComponent {
   counterValue = signal(0);
   increment(){
-    this.counterValue.set(this.counterValue() + 1)
+    // this.counterValue.set(this.counterValue() + 1)
+    this.counterValue.update(c => c + 1);
   }
 
   decrement(){
-    this.counterValue.set(this.counterValue() - 1)
+    this.counterValue.update(c => c - 1);
   }
 
   reset(){
