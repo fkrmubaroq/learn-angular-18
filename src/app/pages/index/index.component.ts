@@ -2,8 +2,8 @@ import { Component } from '@angular/core';
 
 const listLearned = [
   {
-    name: "Input",
-    path: "/input"
+    name: "Form",
+    path: "/form"
   },
   {
     

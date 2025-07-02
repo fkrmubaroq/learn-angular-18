@@ -7,7 +7,7 @@ export const routes: Routes = [
         loadComponent:() => import("./pages/index/index.component").then(c => c.IndexComponent)
     },
     {
-        path:"input",
-        loadComponent:() => import("./pages/input/input.component").then(c => c.InputComponent)
+        path:"form",
+        loadComponent:() => import("./pages/form/form.component").then(c => c.FormComponent)
     }
 ];

@@ -1,1 +1,32 @@
 @import "tailwindcss";
+html, body{
+    width: 100%;
+    height: 100%;
+}
+.toast {
+  @apply bg-gray-700 text-white shadow-2xl rounded-md px-3 py-2 w-[300px];
+  @apply absolute left-1/2 -translate-x-1/2 top-4;
+  .close-btn {
+    @apply absolute text-white right-2 top-1 block hover:opacity-80 cursor-pointer;
+  }
+  .content{
+    @apply text-sm
+  }
+}
+@keyframes fade-in-out {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  10% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.animate-fade-in-out {
+  animation: fade-in-out 3s ease forwards;
+} 

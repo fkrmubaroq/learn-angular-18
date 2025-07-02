@@ -1,0 +1,12 @@
+@reference "tailwindcss";
+label{
+    @apply text-gray-800 text-sm font-medium;
+}
+input{
+    @apply rounded-sm px-2 py-1.5 border border-gray-300 text-sm text-gray-700;
+    @apply focus:outline-gray-400 placeholder:text-gray-500;
+}
+button[type="submit"]{
+    @apply border-none bg-red-500 text-white py-2 text-sm uppercase tracking-wide rounded-sm;
+    @apply hover:bg-red-700 cursor-pointer;
+}

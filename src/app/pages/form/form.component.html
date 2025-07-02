@@ -1,0 +1,14 @@
+<form class="max-w-[400px] mx-auto mt-10 flex flex-col gap-y-2 bg-white drop-shadow-sm p-6"
+    (submit)="onSubmit($event)"
+>
+    <h1 class="mx-auto font-semibold mb-2">BASIC LOGIN</h1>
+    <div class="flex flex-col gap-y-1">
+        <label>Username</label>
+        <input type="text" [value]="form().username" placeholder="Username" (change)="onChangeInput('username',$event)" />
+    </div>
+    <div class="flex flex-col gap-y-1">
+        <label>Password</label>
+        <input type="password" [value]="form().password" placeholder="Password" (change)="onChangeInput('password',$event)"/>
+    </div>
+    <button type="submit" class="mt-4">Login</button>
+</form> 
