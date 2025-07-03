@@ -1,3 +1,6 @@
-<button class="flex text-gray-600" (click)="onClick()">
-  &lt;  Back
-</button>
+@if(isShowButtonBack){
+  <button class="flex text-gray-600 cursor-pointer mt-3" (click)="onClick()">
+    <lucide-icon name="ChevronLeft" class="mr-0.5" />
+    <span >Back</span>
+  </button>
+}

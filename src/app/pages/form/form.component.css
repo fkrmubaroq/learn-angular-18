@@ -1,4 +1,5 @@
 @reference "tailwindcss";
+
 label{
     @apply text-gray-800 text-sm font-medium;
 }

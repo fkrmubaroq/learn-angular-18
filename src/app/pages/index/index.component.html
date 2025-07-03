@@ -1,11 +1,12 @@
 <div class="max-w-[400px] mx-auto flex flex-col gap-y-2 mt-2">
   @for (item of listLearned; track $index) {
-  <li
+  <a
+    href="/form"
     [className]="
       'items-center bg-red-500 text-white p-2 flex justify-center rounded-sm hover:bg-red-700 cursor-pointer'
     "
   >
-    <a href="/form">{{ item.name }}</a>
-  </li>
+    {{ item.name }}
+  </a>
   }
 </div>
