@@ -1,7 +1,7 @@
 <div class="max-w-[400px] mx-auto flex flex-col gap-y-2 mt-2">
   @for (item of listLearned; track $index) {
   <a
-    href="/form"
+    [href]="item.path"
     [className]="
       'items-center bg-red-500 text-white p-2 flex justify-center rounded-sm hover:bg-red-700 cursor-pointer'
     "

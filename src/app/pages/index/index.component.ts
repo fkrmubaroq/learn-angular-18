@@ -6,7 +6,8 @@ const listLearned = [
     path: "/form"
   },
   {
-    
+    name: "input & output",
+    path: "/input-output"
   }
 ]
 

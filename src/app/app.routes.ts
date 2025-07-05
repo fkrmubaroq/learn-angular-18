@@ -9,5 +9,9 @@ export const routes: Routes = [
     {
         path:"form",
         loadComponent:() => import("./pages/form/form.component").then(c => c.FormComponent)
+    },
+    {
+        path:"input-output",
+        loadComponent:() => import("./pages/input-output/parent.component").then(c => c.ParentComponent)
     }
 ];

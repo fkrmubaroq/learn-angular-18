@@ -9,7 +9,6 @@ import { LucideAngularModule } from 'lucide-angular';
 })
 export class ButtonBackComponent {
   get isShowButtonBack() {
-    console.log("huhu")
     return window.location.pathname !== '/';
   }
   onClick() {

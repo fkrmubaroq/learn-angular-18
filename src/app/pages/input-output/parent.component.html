@@ -1,0 +1,7 @@
+<fieldset class="max-w-[500px] mx-auto border border-white px-5 py-3">
+    <legend class="text-white pl-2 pr-3">Parent Component</legend>
+    <app-child [message]="'Ayo makan nak'" (sendBack)="onSendBack($event)" [childMessage]="childMessage"/>
+
+    <input (input)="test = 'xx'"/>
+    {{ test }}
+</fieldset>
