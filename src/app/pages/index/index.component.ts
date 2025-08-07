@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-
+import { RouterLink } from '@angular/router';
 const listLearned = [
   {
     name: "Form",
@@ -8,13 +8,17 @@ const listLearned = [
   {
     name: "input & output",
     path: "/input-output"
-  }
+  },
+  {
+    name: "QueryParams",
+    path: "/query-params"
+  },
 ]
 
 @Component({
   selector: 'app-index',
   standalone: true,
-  imports: [],
+  imports: [RouterLink],
   templateUrl: './index.component.html',
   styles: ``
 })
