@@ -1,0 +1,17 @@
+<nav [id]="id">
+  <div class="flex items-center gap-x-4 p-3">
+    <lucide-icon name="Croissant" size="30" color="#666" />
+    <div class="flex flex-col">
+      <span class="text-gray-600 leading-5 font-bold uppercase">Logo</span>
+      <span class="text-gray-400 text-xs">Admin</span>
+    </div>
+  </div>
+  <div class="flex flex-col gap-y-2 text-gray-900">
+    @for(item of sidebarItems; track item.path){
+    <a class="flex items-center gap-x-2 p-2" [routerLink]="item.path">
+      <span>{{ item.label }}</span>
+      <lucide-icon [name]="item.icon" />
+    </a> 
+    }
+  </div>
+</nav>

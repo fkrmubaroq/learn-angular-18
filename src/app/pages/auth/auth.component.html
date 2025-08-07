@@ -1,0 +1,11 @@
+@if(user.email){
+<div class="flex flex-col gap-y-3">
+  <h1 class="text-center text-2xl font-bold">
+    You logged in as {{ user.email }}
+  </h1>
+  <a class="cursor-pointer bg-amber-500 mx-auto text-white p-2 rounded-md hover:bg-amber-700" routerLink="/auth/admin/dashboard">Go to dashboard</a>
+  <div class="cursor-pointer text-blue-400 text-center hover:text-blue-600" (click)="logout()">Logout</div>
+</div>
+} @else{
+<h1>You are not logged in</h1>
+}

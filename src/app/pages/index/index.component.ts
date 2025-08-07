@@ -13,6 +13,10 @@ const listLearned = [
     name: "QueryParams",
     path: "/query-params"
   },
+  {
+    name: "Auth",
+    path: "/auth"
+  },
 ]
 
 @Component({

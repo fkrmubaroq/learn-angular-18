@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 @Component({
   selector: 'shared-input',
@@ -13,5 +13,9 @@ export class InputComponent {
   @Input() value: string = '';
   @Input() name: string = '';
   @Input() class: string = '';
-  @Input() onChange: (event: Event) => void = () => {};
+  @Output() onChange: EventEmitter<Event> = new EventEmitter<Event>();
+
+  onInput(event: Event){
+    this.onChange.emit(event)
+  }
 }
